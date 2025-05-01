@@ -2,6 +2,8 @@
 
 This is my `neovim-nvim` config.
 
+Install neovim from https://github.com/neovim/neovim/releases
+
 ## Requirements
 
 - `gcc` for `nvim-treesitter`
@@ -29,6 +31,18 @@ This is my `neovim-nvim` config.
 - `curl`
     ```bash
     sudo apt install curl
+    ```
+
+- `clangd` and `clang-format` (for c++ lsp and formatter support)
+    ```bash
+    sudo apt install clangd clang-format
+    ```
+
+- `node.js` (follow official docs)
+
+- `prettier` (formatter)
+    ```bash
+    npm i -g prettier
     ```
 
 ## Steps
@@ -71,3 +85,8 @@ This is my `neovim-nvim` config.
     mv * ~/.config/nvim/
     ```
 
+## Additionals
+
+- Type `:Lazy` to open the Lazy-Menu.
+- Type `:Mason` to see all `LSP`, `Formatters`, `Linters`, etc.
+- Type `:checkhealth` for nvim health check
